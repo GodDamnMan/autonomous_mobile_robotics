@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   terminal:
-    image: goddamnman/ros_humble_gazebo_fortress:v0.0.1
+    image: goddamnman/ros_humble_gazebo_fortress:v0.0.2
     container_name: ros_fortress
     network_mode: host
     privileged: true
@@ -16,3 +16,5 @@ services:
     shm_size: 2gb
     stdin_open: true
     tty: true
+
+    user: "mobile"
